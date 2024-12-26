@@ -12,13 +12,13 @@ const App = () => {
   const characters = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']; // Example characters
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/products')
+    axios.get('https://product-mapping-backend.onrender.com/api/products')
       .then((response) => setProductNames(response.data))
       .catch((error) => console.error('Error fetching products', error));
   }, []);
 
   const handleManualMapping = () => {
-    axios.post('http://localhost:5000/api/products/manual', {
+    axios.post('https://product-mapping-backend.onrender.com/api/products/manual', {
       supplierName,
       standardizedName,
     })
