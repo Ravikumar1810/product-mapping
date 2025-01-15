@@ -24,32 +24,58 @@ Synonym Handling: Replaces common abbreviations and synonyms with standardized t
 Uses a predefined local dictionary if the backend server is unreachable.
 Ensures uninterrupted operation by loading and saving mappings locally.
 4. CRUD Operations
+   
 Create: Add new mappings manually.
+
 Read: Fetch mappings from the server or fallback dictionary.
+
 Update: Modify mappings dynamically.
+
 Delete: Remove mappings via a delete button in the UI.
 Technical Details
+
 Frontend
+
 Languages and Libraries:
+
 HTML: Interface structure.
+
 CSS: Styling and layout, including flexbox for adjustments.
+
 JavaScript: Core functionality:
+
 Fetch API for server communication.
+
 DOM manipulation for UI updates.
+
 Backend
+
 Technologies Used:
+
 Node.js and Express: Handles API requests.
+
 MongoDB: Stores mappings persistently.
+
 Mongoose: ORM for database interaction.
+
 Cases Identified and Handled
+
 Case Sensitivity: Normalizes text to lowercase for consistent matching.
+
 Extra Spaces: Trims leading, trailing, and multiple spaces.
+
 Abbreviations and Synonyms: Replaces common abbreviations (e.g., sh → sheet).
+
 Server Downtime: Falls back to a local dictionary stored in JavaScript.
+
 Exact and Partial Matches: Handles both exact and approximate matches (e.g., "a4sheet" matches "a4 sheet").
 
 Author
+
 Ravikumar N K
+
 Acharya Institute of Technology, Bengaluru
+
 📧 nkravikumar18@gmail.com
+
 📞 7483173215
