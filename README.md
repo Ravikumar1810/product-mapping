@@ -1,6 +1,10 @@
 Product Name Mapping System
+
 Overview
-The Product Name Mapping System is designed to standardize product names from different suppliers, ensuring consistent data entry and improved efficiency. It provides:
+
+The Product Name Mapping System is designed to standardize product names from different suppliers, ensuring consistent data entry and improved efficiency. 
+
+It provides:
 
 Manual Matching: Add mappings for product names manually.
 Automatic Matching: Identify and map product names automatically using intelligent matching algorithms.
